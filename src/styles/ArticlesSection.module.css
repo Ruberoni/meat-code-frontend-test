@@ -1,4 +1,9 @@
 .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 var(--px);
 }
 
 .filters {
@@ -9,12 +14,15 @@
   -webkit-box-shadow: 1px 10px 16px 7px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 1px 10px 16px 7px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  height: 320px;
 }
 
 .filterButton {
   display: flex;
   justify-content: space-between;
+  gap: 0;
   align-items: center;
+  width: 220px;
 
   height: 50px;
   padding: 8px 24px;
@@ -31,4 +39,22 @@
 
 .filterButton:hover {
   color: var(--primary);
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .articles {
+    justify-content: flex-start;
+  }
 }

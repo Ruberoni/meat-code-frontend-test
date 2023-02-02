@@ -18,7 +18,12 @@ export default function Home() {
 
       <header className={styles.hero}>
         <div className={styles.heroImageContainer}>
-          <Image src={heroImage} alt="Especias" className={styles.heroImage} />
+          <Image
+            src={heroImage}
+            alt="Especias"
+            className={styles.heroImage}
+            priority
+          />
           <div className={styles.heroImageBlur}></div>
         </div>
         <div className={styles.logoContainer}>
