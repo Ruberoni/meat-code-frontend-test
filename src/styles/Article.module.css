@@ -38,6 +38,7 @@
   display: none;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 15px;
   color: var(--primary);
 }
 
@@ -51,4 +52,27 @@
 
 .article:hover .content {
   margin-bottom: 20px;
+}
+
+.articleSkeleton {
+  width: 270px;
+  height: 340px;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+
+  animation: skeleton 1s infinite ease-in;
+}
+
+@keyframes skeleton {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }

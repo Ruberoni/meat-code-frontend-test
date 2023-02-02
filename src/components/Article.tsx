@@ -18,7 +18,7 @@ const Article = (props: IArticle) => {
         <a
           className={styles.url}
           href={props.url}
-          referrerPolicy="no-referrer"
+          rel="noreferrer"
           target="_blank"
         >
           Ver más
@@ -29,3 +29,7 @@ const Article = (props: IArticle) => {
 };
 
 export default Article;
+
+export const ArticleSkeleton = () => (
+  <div className={styles.articleSkeleton}></div>
+);
