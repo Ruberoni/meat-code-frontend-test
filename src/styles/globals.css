@@ -4,6 +4,8 @@
   --danger: #b72c2c;
   --dark-gray: #3f454a;
   --dark-gray-900: #24272a;
+
+  --px: 9vw;
 }
 
 * {
