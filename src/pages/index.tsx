@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import heroImage from "@public/images/hero.png";
 import brushPaintImage from "@public/images/BRUSH-3 2.png";
-import { ArticlesSection, SocialButton } from "@/components";
+import { ArticlesSection, ContactUsSection, SocialButton } from "@/components";
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from "@/components/icons";
 
 export default function Home() {
@@ -49,7 +49,7 @@ export default function Home() {
           />
         </div>
       </header>
-      <section>
+      <section className="articles">
         <div className={styles.sectionTitleContainer}>
           <Image
             src={brushPaintImage}
@@ -59,6 +59,17 @@ export default function Home() {
           <h3 className={styles.sectionTitle}>Nuestros artículos</h3>
         </div>
         <ArticlesSection />
+      </section>
+      <section className={styles.contactUs}>
+        <div className={styles.sectionTitleContainer}>
+          <Image
+            src={brushPaintImage}
+            alt="Pintada de brocha decorativa"
+            className={styles.sectionTitleBrushPaintImage}
+          />
+          <h3 className={styles.sectionTitle}>Contáctanos</h3>
+        </div>
+        <ContactUsSection />
       </section>
     </>
   );

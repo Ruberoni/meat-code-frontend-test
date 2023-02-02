@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--px);
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 80px;
+  max-width: 716px;
+}
+
+.container button {
+  align-self: center;
+}
+
+.formGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (min-width: 640px) {
+  .formGroup {
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .container {
+    padding: 0;
+    padding-bottom: 80px;
+  }
+
+  .container button {
+    align-self: flex-end;
+  }
+}

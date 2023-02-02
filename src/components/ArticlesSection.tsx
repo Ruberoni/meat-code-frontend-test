@@ -2,8 +2,7 @@ import React from "react";
 import styles from "@/styles/ArticlesSection.module.css";
 import classNames from "classnames";
 import { ArrowIcon } from "./icons";
-import { IArticle, ArticleCategory } from "@/types";
-import * as http from "@/lib/http";
+import { ArticleCategory } from "@/types";
 import Article, { ArticleSkeleton } from "./Article";
 import { useProducts } from "@/hooks";
 

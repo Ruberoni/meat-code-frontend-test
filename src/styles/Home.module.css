@@ -66,19 +66,6 @@
   font-size: 100px;
 }
 
-@media (min-width: 485px) {
-  .heroTitle {
-  }
-}
-
-@media (min-width: 640px) {
-  .heroTitle {
-  }
-
-  .logo {
-  }
-}
-
 @media (min-width: 768px) {
   .heroImage {
     transform: translate(-15%);
@@ -125,6 +112,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20%;
+}
+
+.contactUs .sectionTitleContainer {
+  margin-top: 200px;
 }
 
 .sectionTitle {
@@ -138,7 +130,6 @@
 }
 
 .sectionTitleBrushPaintImage {
-  margin-top: 20%;
   width: 464px;
   height: auto;
   opacity: 0.2;

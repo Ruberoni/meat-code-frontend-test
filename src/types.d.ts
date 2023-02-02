@@ -9,3 +9,10 @@ export interface IArticle {
   content: string;
   url: string;
 }
+
+export interface NewsletterBody {
+  firstname: string;
+  lastname: string;
+  email: string;
+  phone: string;
+}

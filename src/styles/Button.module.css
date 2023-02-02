@@ -1,0 +1,20 @@
+.button {
+  width: 170px;
+  height: 55px;
+  color: white;
+  border-radius: 50px;
+  background-color: var(--primary);
+
+  font-family: var(--open-sans-font);
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.button:hover {
+  background-color: var(--secondary);
+}
+
+.button:disabled {
+  background-color: #cfcfcf;
+}

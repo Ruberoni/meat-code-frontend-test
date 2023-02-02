@@ -1,0 +1,54 @@
+.textInput {
+  height: 50px;
+  width: 280px;
+  padding: 12px 20px;
+  font-family: var(--open-sans-font);
+  font-size: 14px;
+  line-height: 24px;
+  border: 1px solid #CFCFCF;
+  color: #6F6F6F;
+  background: white;
+}
+
+.textInput:focus {
+  outline: 1px solid var(--primary);
+  color: var(--gray);
+}
+
+.textInput:disabled {
+  opacity: 0.5;
+}
+
+.textInputErrorState {
+  outline: 1px solid var(--danger);
+  color: var(--danger);
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-family: var(--open-sans-font);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.label input {
+  margin-top: 4px;
+}
+
+.textInput[aria-invalid="true"] {
+  outline: 1px solid var(--danger);
+  color: var(--danger);
+}
+
+.errorMessage {
+  color: var(--danger);
+  font-family: var(--open-sans-font);
+  font-size: 12px;
+}
+
+.inputContainer {
+  height: 95px;
+}
