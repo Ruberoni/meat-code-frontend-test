@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import heroImage from "@public/images/hero.png";
 import brushPaintImage from "@public/images/BRUSH-3 2.png";
-import { SocialButton } from "@/components";
+import { ArticlesSection, SocialButton } from "@/components";
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from "@/components/icons";
 
 export default function Home() {
@@ -53,6 +53,7 @@ export default function Home() {
           />
           <h3 className={styles.sectionTitle}>Nuestros artículos</h3>
         </div>
+        <ArticlesSection />
       </section>
     </>
   );

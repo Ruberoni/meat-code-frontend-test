@@ -1,0 +1,34 @@
+.container {
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  box-shadow: 1px 10px 16px 7px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 10px 16px 7px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 10px 16px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.filterButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 50px;
+  padding: 8px 24px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: var(--open-sans-font);
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+.activeFilterButton {
+  color: var(--primary);
+}
+
+.filterButton:hover {
+  color: var(--primary);
+}

@@ -24,3 +24,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+button {
+  all: unset;
+}
+
+button:focus {
+  outline: 1px solid black;
+}
